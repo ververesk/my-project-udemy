@@ -23,3 +23,7 @@
 *.iml
 .idea/
 .gradle/
+target
+target/*
+target/**
+/classes/**
