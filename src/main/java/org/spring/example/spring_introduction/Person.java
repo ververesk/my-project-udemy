@@ -5,21 +5,25 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component("personBean")
+//@Component("personBean")
 public class Person {
-    @Autowired
-    @Qualifier("dog") //если подходящих бинов несколько то надо явно указать какой именно бин нам нужен
+//    @Autowired
+ //   @Qualifier("dog") //если подходящих бинов несколько то надо явно указать какой именно бин нам нужен
     private Pet pet;
     @Value("${person.surName}")
     private String surName;
     @Value("${person.age}")
     private int age;
 
-//@Autowired
-//    public Person(Pet pet) {
+    public Person(Pet pet) {
+        System.out.println("Person bean is created");
+        this.pet = pet;
+  }
+//     @Autowired
+//    public Person(@Qualifier("catBean") Pet pet) {
 //        System.out.println("Person bean is created");
 //        this.pet = pet;
-//    }
+//  }
 //    public Person() {
 //        System.out.println("Person bean is created");
 //
