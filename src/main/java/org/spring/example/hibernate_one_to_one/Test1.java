@@ -1,10 +1,10 @@
-package org.spring.example.hibernate_test2;
+package org.spring.example.hibernate_one_to_one;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.spring.example.hibernate_test2.entity.Detail;
-import org.spring.example.hibernate_test2.entity.Employee;
+import org.spring.example.hibernate_one_to_one.entity.Detail;
+import org.spring.example.hibernate_one_to_one.entity.Employee;
 
 public class Test1 {
     public static void main(String[] args) {
