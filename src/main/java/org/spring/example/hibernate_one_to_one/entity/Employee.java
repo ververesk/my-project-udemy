@@ -3,7 +3,7 @@ package org.spring.example.hibernate_one_to_one.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name="employees")
+@Table(name="employees2")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
